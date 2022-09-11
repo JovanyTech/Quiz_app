@@ -3,7 +3,7 @@ let bulletsSpanContainer = document.querySelector(".bullets .spans")
 let resultsContainer = document.querySelector(".results")
 let countDownElement = document.querySelector(".countdown")
 let currentIndex = 0
-let rightAnswers = 0
+0\let rightAnswers = 0
 let quizArea = document.querySelector(".quiz-area")
 let answersArea =document.querySelector(".answers-area")
 let submitButton = document.querySelector(".submit-button")
@@ -23,8 +23,8 @@ submitButton.onclick = () => {
 	let  Answer = questionsObject(currentIndex).right_answer
 	currentIndex ++
 	checkAnswer(Answer,qCount)
-	quiz-area.innerHTML = " ";
-	answers-area.innerHTML=" "
+	quizArea.innerHTML = " ";
+	answersArea.innerHTML=" "
 	addQuestionData(questionsObject[currentIndex],qCount)
 	handleBullets()
 	clearInterval(countDownInterval)
