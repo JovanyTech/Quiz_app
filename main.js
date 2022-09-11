@@ -20,9 +20,9 @@ addQuestionData(questionsObject[currentIndex],qCount)
 countDown(3,qCount)
 submitButton.onclick = () => {
 	
-	let theRightAnswer = questionsObject(currentIndex).right_answer
-	currentIndex++
-	checkAnswer(theRightAnswer,qCount)
+	let  Answer = questionsObject(currentIndex).right_answer
+	currentIndex ++
+	checkAnswer(Answer,qCount)
 	quiz-area.innerHTML = "";
 	answers-area.innerHTML=""
 	addQuestionData(questionsObject[currentIndex],qCount)
