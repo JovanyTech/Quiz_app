@@ -23,8 +23,8 @@ submitButton.onclick = () => {
 	let theRightAnswer = questionsObject(currentIndex).right_answer
 	currentIndex++
 	checkAnswer(theRightAnswer,qCount)
-	quiz-area.innerHTML=""
-	answers-area.innerHTML=""
+	quizArea.innerHTML=""
+	answersArea.innerHTML=""
 	addQuestionData(questionsObject[currentIndex],qCount)
 	handleBullets()
 	clearInterval(countDownInterval)
