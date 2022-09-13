@@ -10,8 +10,8 @@ let submitButton = document.querySelector(".submit-button")
 let bullets = document.querySelector(".bullets")
 let countDownInterval;
 function getQuestions() {
-    let myRequest = new XMLHttpRequest();
-    myRequest.onreadystatechange = function(){
+    let myReq = new XMLHttpRequest();
+    myReq.onreadystatechange = function(){
         if(this.readyState === 4 && this.status === 200){
 let questionsObject = JSON.parse(this.responseText)
 let qCount = questionsObject.length 
@@ -33,8 +33,8 @@ submitButton.onclick = () => {
 }
         }
     }
-    myRequest.open("GET","json.json",true)
-    myRequest.send();
+    myReq.open("GET","json.json",true)
+    myReq.send();
 
 }
 getQuestions();
