@@ -83,7 +83,7 @@ function checkAnswer(rAnswer,count){
 	let theChoosenAnswer
 	for(let i = 0; i<answers.length;i++){
 		if(answers[i].checked){
-			theChoosenAnswer = answers[i].dataset.answers
+			theChoosenAnswer = answers[i].dataset.answer
 		}
 		if(rAnswer === theRightAnswer){
 			rightAnswers++;
