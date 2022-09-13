@@ -81,9 +81,9 @@ answersArea.appendChild(mainDiv)
 function checkAnswer(rAnswer,count){
 	let answers = document.getElementsByClassName("question")
 	let theChoosenAnswer
-	for(let i = 0; i<answer.length;i++){
+	for(let i = 0; i<answers.length;i++){
 		if(answers[i].checked){
-			theChoosenAnswer = answer[i].dataset.answer
+			theChoosenAnswer = answers[i].dataset.answers
 		}
 		if(rAnswer === theRightAnswer){
 			rightAnswers++;
