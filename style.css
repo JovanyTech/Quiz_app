@@ -31,21 +31,21 @@ body{
 .quiz-app .quiz-area h2{
     margin: 0;
 }
-.quiz-app .answer-area{
+.quiz-app .answers-area{
     background-color: #fff;
     padding: 0 20px 20px;
 }
-.quiz-app .answer-area .answer{
+.quiz-app .answers-area .answer{
 background-color: #f9f9f9;
 padding: 15px;
 }
-.quiz-app .answer-area .answer:not(:last-child){
+.quiz-app .answers-area .answer:not(:last-child){
     border-bottom: 1px solid #dfdfdf;
 }
-.quiz-app .answer-area .answer input[type='radio']:checked + label{
+.quiz-app .answers-area .answer input[type='radio']:checked + label{
     color: #0075ff;
 }
-.quiz-app .answer-area .answer label{
+.quiz-app .answers-area .answer label{
     cursor: pointer;
     font-weight: bold;
     color: #777;
