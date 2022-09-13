@@ -85,10 +85,10 @@ function checkAnswer(rAnswer,count){
 		if(answers[i].checked){
 			theChoosenAnswer = answers[i].dataset.answer
 		}
-		if(rAnswer === theChoosenAnswer){
-			++rightAnswers;
-		}
 	}
+	if(rAnswer === theChoosenAnswer){
+			rightAnswers++
+		}
 }
 function handleBullets(){
 	let bulletsSpans = document.querySelectorAll(".bullets .spans span")
