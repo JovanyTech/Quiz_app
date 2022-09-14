@@ -88,6 +88,9 @@ function checkAnswer(rAnswer,count){
 	}
 	if(rAnswer === theChoosenAnswer){
 			rightAnswers++
+		console.log(rAnswer)
+		console.log(theChoosenAnswer)
+		console.log(rightAnswers)
 		}
 }
 function handleBullets(){
