@@ -34,7 +34,7 @@ submitButton.onclick = () => {
         }
     }
     myRequest.open("GET","json.json",true)
-    myRequest.send();
+    myRequest.send()
 
 }
 getQuestions();
