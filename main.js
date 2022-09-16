@@ -86,7 +86,7 @@ function checkAnswer(rAnswer,count){
 		if(answers[i].checked){
 			theChoosenAnswer = answers[i].dataset.answer
 		}
-		if(rAnswer === theRightAnswer){
+		if(rAnswer === theChoosenAnswer){
 			rightAnswers++;
 		}
 	}
