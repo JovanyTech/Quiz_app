@@ -1,4 +1,4 @@
-let countSpan = document.querySelector(".count span");
+let countSpan = document.querySelector(".count span")
 let bulletsSpanContainer = document.querySelector(".bullets .spans")
 let resultsContainer = document.querySelector(".results")
 let countDownElement = document.querySelector(".countdown")
