@@ -25,7 +25,7 @@ submitButton.onclick = () => {
 	checkAnswer(theRightAnswer,qCount)
 	quizArea.innerHTML=""
 	answersArea.innerHTML=""
-	addQuestionData(questionsObject[currentIndex],qCount)
+	addData(questionsObject[currentIndex],qCount)
 	handleBullets()
 	clearInterval(countDownInterval)
 	countDown(3,qCount)
@@ -79,7 +79,7 @@ answersArea.appendChild(mainDiv)
 
 }
 function checkAnswer(rAnswer,count){
-	let answers = document.getElementsByClassName("question")
+	let answers = document.getElementsByClassName("answer")
 	let theChoosenAnswer
 	for(let i = 0; i<answers.length;i++){
 		if(answers[i].checked){
