@@ -37,7 +37,7 @@ submitButton.onclick = () => {
     myRequest.send()
 
 }
-getQuestions();
+getQuestions()
 function createBullets(num){
 
     countSpan.innerHTML = num
