@@ -62,6 +62,7 @@ let radioInput = document.createElement("input")
 radioInput.name = 'question'
 radioInput.type='radio'
 radioInput.id = `answer_${i}`
+radioInput.className = 'q'
 radioInput.dataset.answer = obj[`answer_${i}`]
 if(i === 1){
     radioInput.checked = true;
@@ -79,7 +80,7 @@ answersArea.appendChild(mainDiv)
 
 }
 function checkAnswer(rAnswer,count){
-	let answers = document.getElementsByClassName("answer")
+	let answers = document.getElementsByClassName("q")
 	let theChoosenAnswer
 	for(let i = 0; i<answers.length;i++){
 		if(answers[i].checked){
@@ -88,7 +89,7 @@ function checkAnswer(rAnswer,count){
 		}
 	}
 	if(rAnswer === theChoosenAnswer){
-			rightAnswers += rightAnswers + 1
+			rightAnswers++
 		}
 		console.log(rAnswer)
 		console.log(theChoosenAnswer)
