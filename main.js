@@ -8,7 +8,7 @@ let quizArea = document.querySelector(".quiz-area")
 let answersArea =document.querySelector(".answers-area")
 let submitButton = document.querySelector(".submit-button")
 let bullets = document.querySelector(".bullets")
-let countDownInterval;
+let countDownInterval
 function getQuestions() {
     let myRequest = new XMLHttpRequest();
     myRequest.onreadystatechange = function(){
