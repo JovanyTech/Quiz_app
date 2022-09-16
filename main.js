@@ -80,7 +80,7 @@ answersArea.appendChild(mainDiv)
 
 }
 function checkAnswer(rAnswer,count){
-	let answers = getElementsByClassName("question")
+	let answers = document.getElementsByClassName("question")
 	let theChoosenAnswer
 	for(let i = 0; i<answer.length;i++){
 		if(answers[i].checked){
