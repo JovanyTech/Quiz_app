@@ -88,7 +88,7 @@ function checkAnswer(rAnswer,count){
 		}
 	}
 	if(rAnswer === theChoosenAnswer){
-			rightAnswers++
+			rightAnswers += rightAnswers + 1
 		}
 		console.log(rAnswer)
 		console.log(theChoosenAnswer)
