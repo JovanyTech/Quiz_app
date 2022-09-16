@@ -57,9 +57,10 @@ questionTitle.appendChild(questionText);
 quizArea.appendChild(questionTitle)
 for(let i = 1; i <= 4;i++){
     let mainDiv = document.createElement("div")
-    main.className = "answer"
+    mainDiv.className = "answer"
 let radioInput = document.createElement("input")
 radioInput.name = 'question'
+radioInput.className = 'question'
 radioInput.type='radio'
 radioInput.id = `answer_${i}`
 radioInput.dataset.answer = obj[`answer_${i}`]
