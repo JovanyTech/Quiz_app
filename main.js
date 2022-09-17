@@ -29,7 +29,7 @@ submitButton.onclick = () => {
 	handleBullets()
 	clearInterval(countDownInterval)
 	countDown(3,qCount)
-	showResults(qCount)
+	showResults(qCount);
 }
         }
     }
