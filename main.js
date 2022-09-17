@@ -53,7 +53,7 @@ function addQuestionData(obj,count){
     if(currentIndex < count){
 		let questionTitle = document.createElement("h2")
     let questionText  = document.createTextNode(obj.title)
-questionTitle.appendChild(questionText);
+questionTitle.appendChild(questionText)
 quizArea.appendChild(questionTitle)
 for(let i = 1; i <= 4;i++){
     let mainDiv = document.createElement("div")
