@@ -108,7 +108,7 @@ function showResults(count){
 		submitButton.remove()
 		bullets.remove()
 		if(rightAnswers > (count / 2) && rightAnswers < count){
-			theResults = `<span class='Good'>Good</span>, ${rightAnswers} From ${count} Is Good.`
+			theResults = `<span class='good'>Good</span>, ${rightAnswers} From ${count} Is Good.`
 			
 		}else if(rightAnswers === count){
 			theResults = `<span class='perfect'>Perfect</span>, ${rightAnswers} From ${count} Is Perfect.`
