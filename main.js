@@ -101,7 +101,7 @@ function handleBullets(){
 	})
 }
 function showResults(count){
-	let = theResults;
+	let theResults;
 	if(currentIndex === count){
 		quizArea.remove()
 		answersArea.remove()
